@@ -1,0 +1,36 @@
+Polymorphism
+What does the word 'polymorphism' mean?
+- It means that something can take many forms (or in the case of programming, can take on many types).
+
+What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+- It means that a class can take on the behaviours of a parent class through inheritance, or take on the behaviours of an interface by implementing that interface.
+
+What can we use to implement polymorphism in Java?
+- Inheritance (parent/child classes) or the use of interfaces.
+
+How many 'forms' can an object take when using polymorphism?
+- A class can take on one extra "form" by inheriting from a parent class or many extra "forms" by implementing many interfaces. It can do both, so there is no limit to the number of "forms" a class can take on.
+
+Give an example of when you could use polymorphism.
+- If I was building a program that comprised a number of animals of different types I may have parent classes for Mammals, SeaCreatures, Insects, etc, which could act as base classes for different types of animal classes (eg. Tiger, Octopus, Beetle) that could inherit properties and behaviours from them. These animals could then take on the type of their parent class in order to hold the same properties and behaviours (eg. hasShell, fly(), etc).
+
+
+
+Composition and Aggregation
+What do we mean by 'composition' in reference to object-oriented programming?
+- Composition refers to properties of a class, things that are a part of that class but which cannot exist outwith the class (ie. are not their own sub-class).
+
+When would you use composition? Provide a simple example in Java.
+- A Car class could have a property of colour, but colour would not be a class of its own.
+
+Give a difference between composition and aggregation?
+- Aggregation refers to properties of a class that are themselves classes and can exist outwith the class that has them.
+
+What is/are the advantage(s) of using composition/aggregation?
+- Composition gives us the advantage of being able to declare simple properties of a class without having to set up an additional class. Aggregation gives us the advantage of being able to declare complex properties that hold additional information about themselves in their own class.
+
+When using composition, when an object is destroyed, what happens to all the objects it is composed of?
+- They are destroyed too.
+
+When using aggregation, when an object is destroyed, what happens to all the objects it is composed of?
+- They continue to exist outwith the destroyed object.
